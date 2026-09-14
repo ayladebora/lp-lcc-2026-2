@@ -1,6 +1,9 @@
 import javax.swing.JOptionPane;
 
 public class TesteArray3 {
+
+
+
     public static void main(String [] args){
         String listaNumerosStr = JOptionPane.showInputDialog("Digite 4 números separados por espaço");
         System.out.println("Os números lidos foram:"+ listaNumerosStr);
