@@ -1,3 +1,5 @@
+package br.ufpb.dcx.ayla.programasiniciais;
+
 import java.util.Scanner;
 public class TestaMetodo {
 

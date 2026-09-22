@@ -1,3 +1,5 @@
+package br.ufpb.dcx.ayla.programasiniciais;
+
 import javax.swing.JOptionPane;
 
 public class Ola {
@@ -14,7 +16,7 @@ public class Ola {
         System.out.println(nome.charAt(3));
 
         nome = JOptionPane.showInputDialog("Digite seu nome");
-        System.out.println("Oi " + nome);
+        System.out.println("br.ufpb.dcx.ayla.programasiniciais.Oi " + nome);
         mostreSaudacao(nome);
 
         int idade  = 15;

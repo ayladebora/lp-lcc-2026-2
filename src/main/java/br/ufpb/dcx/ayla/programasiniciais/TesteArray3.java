@@ -1,3 +1,5 @@
+package br.ufpb.dcx.ayla.programasiniciais;
+
 import javax.swing.JOptionPane;
 
 public class TesteArray3 {

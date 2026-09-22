@@ -1,3 +1,5 @@
+package br.ufpb.dcx.ayla.programasiniciais;
+
 public class Oi {
 
     public static void main(String [] args){

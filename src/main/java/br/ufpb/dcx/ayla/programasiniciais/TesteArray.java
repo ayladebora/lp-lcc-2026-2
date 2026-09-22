@@ -1,3 +1,5 @@
+package br.ufpb.dcx.ayla.programasiniciais;
+
 public class TesteArray {
 
     public static void main(String [] args){
