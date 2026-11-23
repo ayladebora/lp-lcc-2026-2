@@ -4,19 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 public class MeuSistemaGerenciaDeAtletas implements SistemaGerenciaDeAtletas {
     private List<Atleta> atletas;
+    private GravadorDeAtletas gravador;
 
     public MeuSistemaGerenciaDeAtletas() {
         this.atletas = new ArrayList<>();
     }
 
-    public boolean cadastrarTelefoneDeAtleta(String codigoAtleta, Telefone tel) {
+    public void cadastrarTelefoneDeAtleta(String codigoAtleta, Telefone tel)
+        throws AtletaNaoExisteException{
         for (Atleta a : this.atletas) {
             if (a.getCodigo().equals(codigoAtleta)) {
                 a.cadastraTelefone(tel);
-                return true;
+                return;
             }
         }
-        return false;
+        throw new AtletaNaoExisteException("Não existe atleta com o código "+ codigoAtleta);
     }//… Outros métodos da classe
 //TODO: Implementar outros métodos da interface
 

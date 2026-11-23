@@ -23,7 +23,9 @@ public interface SistemaGerenciaDeAtletas {
      * se nenhum atleta estiver cadastrado no sistema.
      */
     public int pesquisarMaiorIdadeDosAtletas();
-    public boolean cadastrarTelefoneDeAtleta(String codigoAtleta, Telefone tel);
+    public void cadastrarTelefoneDeAtleta(String codigoAtleta, Telefone tel)
+            throws AtletaNaoExisteException;
     public boolean apagarTelefoneDeAtleta(String codigoAtleta, Telefone tel);
+
 }
 
